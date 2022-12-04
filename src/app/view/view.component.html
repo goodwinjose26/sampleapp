@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<table class="table" style="margin:70px ;">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">DESCRIBE YOUR FRIEND</th>
+        <th scope="col">FRIEND NAME</th>
+        <th scope="col">FRIEND NICK NAME</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of data">
+        <td>{{i.name}}</td>
+        <td>{{i.DescribeYourFriend}}</td>
+        <td>{{i.friendName}}</td>
+        <td>{{i.friendNickName}}</td>
+
+      </tr>
+    </tbody>
+  </table>
