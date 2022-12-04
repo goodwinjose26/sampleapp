@@ -7,17 +7,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AddComponent } from './add/add.component';
 const myRote:Routes=[
   {
     path:"",
     component:LoginComponent
+  },
+  {
+    path:"add",
+    component:AddComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,
