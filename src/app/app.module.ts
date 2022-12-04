@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddComponent } from './add/add.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ViewComponent } from './view/view.component';
 const myRote:Routes=[
   {
     path:"",
@@ -17,6 +18,10 @@ const myRote:Routes=[
   {
     path:"add",
     component:AddComponent
+  },
+  {
+    path:"view",
+    component:ViewComponent
   }
 ]
 @NgModule({
@@ -24,7 +29,8 @@ const myRote:Routes=[
     AppComponent,
     LoginComponent,
     NavbarComponent,
-    AddComponent
+    AddComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
