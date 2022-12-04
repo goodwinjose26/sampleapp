@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddComponent } from './add/add.component';
+import { HttpClientModule } from '@angular/common/http';
 const myRote:Routes=[
   {
     path:"",
@@ -29,7 +30,8 @@ const myRote:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRote),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
